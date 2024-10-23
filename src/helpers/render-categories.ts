@@ -13,19 +13,20 @@ export const render = (
   inputChangeCallback: (category: Category) => void
 ) => {
   categories.forEach((category) => {
-    const categoryElement: HTMLElement = document.createElement("li");
+    const categoryElement: HTMLElement = document.createElement("tr");
     const radioInputElement: HTMLInputElement = document.createElement("input");
     radioInputElement.type = "radio";
     radioInputElement.name = "category";
     radioInputElement.value = category;
     radioInputElement.id = `category-${category}`;
+    radioInputElement.classList.add("li-input");
     radioInputElement.addEventListener("change", () => {
       inputChangeCallback(category);
       handleCatergoryChange(category);
     });
 
     const labelElement: HTMLElement = document.createElement("label");
-    labelElement.setAttribute("for", `category-1${category}`);
+    labelElement.setAttribute("for", `category-${category}`);
     labelElement.innerText = category;
 
     categoryElement.appendChild(radioInputElement);

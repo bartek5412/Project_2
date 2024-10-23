@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TypeScript</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
+    <center>
     <form class="container">
-        <label for="name">Task:</label>
-        <input type="text" id="name"></input>
-<ul class="categories">
+        <label for="name">Zadanie do wykonania:</label><br>
+        <input type="text" id="name" placeholder="Wpisz zadanie"></input>
+<div class="insert">
+        <ul class="categories">
 
-</ul>
+</ul></div>
     </form>
-    <button>Add</button>
-    <p>Todo:</p>
+    <button>Dodaj</button>
+    <p>Do zrobienia:</p>
     <ul class="tasks">
     </ul>
     <script type="module" src="./dist/app.js"></script>
-  </body>
+</center>
+</body>
 </html>

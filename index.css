@@ -1,0 +1,71 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  align-items: center;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+button:hover {
+  background-color: #414141;
+}
+.input {
+  background-color: rgb(43, 43, 43);
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 30px;
+}
+::placeholder {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none; /* Usuń domyślny styl listy */
+  padding: 0;
+}
+
+li {
+  display: flex; /* Flexbox dla listy */
+
+  align-items: center; /* Wyrównanie w pionie */
+  margin-bottom: 10px; /* Odstęp między elementami listy */
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Dodanie linii oddzielającej zadania */
+}
+.li-input {
+  width: 20px;
+  height: 20px;
+  accent-color: #991c1c; /* Użyj tego, aby zmienić kolor zaznaczenia radia */
+  cursor: pointer;
+}
+.insert {
+  border: 1px solid gray;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 20%;
+}
